@@ -1,0 +1,43 @@
+This is a game made with Python and Pygame.
+The player controls the left paddle, while the right paddle is controlled by a basic rule-based AI.
+
+
+ How to Play
+
+ Use W and S keys to move your paddle up and down.
+ The goal is to bounce the ball and score points by making the AI miss.
+ The game has a 60-second timer.
+ When the timer ends, the game shows the winner on the screen.
+ Press Enter to play again.
+
+
+ Game Features
+
+ Player vs AI mode
+ Adjustable AI difficulty (easy, medium, hard)
+ Timer and score display
+ Background image and sound effects support
+ Simple restart system
+
+
+ AI Description
+
+The AI is rule-based:
+- It tracks the ball position when the ball moves toward it.
+- It adjusts its paddle position based on the ball’s direction and distance.
+- Random “error margins” are used to make the AI less perfect, depending on difficulty level.
+
+ Difficulty  Speed  Reaction Distance    Error Margin
+ Easy     -   6    -     400        -        30
+ Medium   -   8    -     600        -        15
+ Hard     -   10   -     800        -        5
+
+
+ Requirements
+
+You need to have Python 3.x and Pygame installed.
+
+Install pygame with:
+
+bash
+pip install pygame
